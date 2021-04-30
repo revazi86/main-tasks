@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signin</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/signin.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="container flex">
+        <!-- Side Image -->
+        <img src="img/Group 244.png" alt="" class="signin-img side-img">
+        <div class="sign-form flex">
+          <!-- Div For Sign Up Texts  -->
+          <div class="form-heading">
+            <h2 >Smartacademy</h2>
+            <p>Welcome back! Please login to your account.</p>
+          </div>
+          <div class="form-sign flex" id="form">
+            <!-- Username input-->
+            <div class="form-group" style="padding-bottom:10px;">
+              <input type="text" placeholder="Username" id="signUsername" class="form1" required />
+              <span class="focus-border"></span>
+              <i class="fas fa-exclamation-circle" style="color:red; top:40%;"></i>
+              <i class="fas fa-check-circle" style="color:green; top:40%;"></i>
+              <small style="top:44px"></small>
+            </div>
+            <!-- Password Input -->
+            <div class="form-group">
+              <input type="password" class="form2" id="signPassword" placeholder="Password" required />
+              <span class="focus-border2"></span>
+              <i class="fas fa-exclamation-circle" style="color:red; top:40%;"></i>
+              <i class="fas fa-check-circle" style="color:green; top:40%;"></i>
+              <small style="top:44px"></small>
+            </div>
+            <!-- Div for checkbox -->
+            <div class="remember flex">
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="remember" name ="rememberme" />
+                <label for="rememberme">Remember Me</label>
+              </div>
+              <p><a href="#">Forget Password</a></p>
+            </div>
+            <!-- Div for wrapping buttons -->
+            <div class="sign-buttons flex">
+              <button type="submit" id="signLogin">Login</button>
+              <a href="signup.html"><button id="signup">Sign Up</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+         <script src="main/signin.js"></script>
+    </body>
+  </html>  
+</body>
+</html>
