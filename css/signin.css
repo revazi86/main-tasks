@@ -1,0 +1,680 @@
+.flex {
+    display: flex;
+  }
+  
+  /* Sign In Page Styling */
+  
+  .signin-img {
+    height: 100vh;
+  }
+  .sign-form {
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .form-heading {
+    text-align: center;
+  }
+  
+  .form-heading > h2 {
+    font-family: "Bold";
+    font-size: 35px;
+    letter-spacing: 10px;
+    color: #43425d;
+  }
+  
+  .form-heading > p {
+    margin-top: 18px;
+    margin-bottom: 35px;
+    font-family: "Normal";
+    font-size: 18px;
+    color: rgba(77, 79, 92, 0.5);
+  }
+  
+  .form-sign {
+    flex-direction: column;
+  }
+  .form-group {
+    position: relative;
+  }
+  .name-form-group {
+    margin-right: 30px;
+  }
+  .name-form-group2 > i {
+    margin-right: 5.5%;
+  }
+  .form-group small {
+    font-size: 12px;
+    color: red;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    font-family: "Normal";
+    visibility: hidden;
+  }
+  .form-group input {
+    width: 100%;
+  }
+  .form-group i {
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    visibility: hidden;
+  }
+  .form-group.error i.fa-exclamation-circle {
+    visibility: visible;
+  }
+  .form-group.error input {
+    border: 1px solid red;
+    border-radius: 10px;
+  }
+  .form-group.error small {
+    visibility: visible;
+  }
+  .form-group.success input {
+    border: 1px solid green;
+    border-radius: 15px;
+  }
+  .form-group.success i.fa-check-circle {
+    visibility: visible;
+  }
+  input {
+    border: none;
+    border-bottom: 1px solid #e9e9f0;
+    font-size: 15px;
+    color: #43425d;
+    font-family: "Normal";
+    padding: 20px;
+    outline: none;
+  }
+  
+  .focus-border,
+  .focus-border2 {
+    width: 0;
+    height: 2px;
+    background-color: #3399ff;
+    transition: 0.4s;
+  }
+  
+  .form1:focus ~ .focus-border,
+  .form2:focus ~ .focus-border2 {
+    width: 100%;
+    transition: 0.4s;
+  }
+  .remember {
+    padding-top: 20px;
+    justify-content: space-between;
+  }
+  
+  .remember,
+  .remember a {
+    color: #43425d;
+    font-family: "Normal";
+    font-size: 15px;
+    align-items: center;
+  }
+  
+  .sign-buttons {
+    margin-top: 40px;
+    justify-content: space-between;
+  }
+  
+  #signLogin,
+  #login,
+  #signup {
+    font-size: 18px;
+    font-family: "Normal";
+    padding: 10px 50px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #signLogin,
+  #login {
+    background-color: #43425d;
+    color: white;
+    border: 1px solid #43425d;
+  }
+  
+  #signup {
+    border: 1px solid #43425d;
+    background-color: white;
+    color: #4d4f5c;
+  }
+  
+  #signup a {
+    color: #4d4f5c;
+  }
+  
+  #signup:hover,
+  #signup:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em black;
+    transform: translateY(-0.25em);
+  }
+  
+  #login:hover,
+  #signLogin:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em black;
+    transform: translateY(-0.25em);
+  }
+  
+  /* Sign Up Page Styling */
+  
+  .signup-form {
+    margin: auto;
+    margin-top: 120px;
+  }
+  
+  .form-signup {
+    flex-direction: column;
+  }
+  .form-signup input {
+    margin-bottom: 30px;
+  }
+  
+  .form-signup #login,
+  .form-signup a {
+    margin: auto;
+  }
+  
+  .form-signup #login {
+    margin-top: 40px;
+  }
+  .checkbox-group {
+    align-items: center;
+  }
+  .checkbox-group p {
+    margin-left: 2%;
+  }
+  
+  .checkbox-group i {
+    visibility: hidden;
+  }
+  .checkbox-group small {
+    visibility: hidden;
+  }
+  .checkbox-group.error i {
+    visibility: visible;
+  }
+  .checkbox-group.error small {
+    visibility: visible;
+    font-family: "Normal";
+    font-size: 12px;
+    margin-left: 2px;
+  }
+  .checkbox-group.success i {
+    visibility: hidden;
+  }
+  .checkbox-group.success small {
+    visibility: hidden;
+  }
+  
+  
+  /* Todo List Page Styling */
+  
+  /* Vertical Navigation Styling */
+  .nav-text {
+    padding: 25px 0;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-text h2 {
+    color: white;
+    font-family: "Bold";
+    letter-spacing: 2px;
+    padding-right: 60px;
+  }
+  
+  .side-bar {
+    background-color: #43425d;
+    width: auto;
+    height: 100vh;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition:all 0.5s;
+  }
+  
+  .side-bar-ul li {
+    padding-left: 20px;
+  }
+  .side-bar-ul li a {
+    display: flex;
+    color: white;
+    font-family: "Normal";
+    align-items: center;
+    padding: 25px 160px 20px 5px;
+  }
+  
+  .side-bar-ul li a img {
+    padding-right: 15px;
+  }
+  .active {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #a3a0fb;
+  }
+  .side-bar-ul li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #a3a0fb;
+  }
+  
+  /* Horizontal Navigation Styling */
+  
+  .horizontal-sidebar {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+  
+  }
+  .horizontal-nav {
+    padding-bottom: 15px;
+  }
+  .horizontal-sidebar .icons {
+    padding-top: 20px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .horizontal-sidebar .icons h2 {
+    font-family: "Normal";
+    color: #4d4f5c;
+    font-size: 13px;
+  }
+  .horizontal-sidebar .icons img {
+    padding-left: 30px;
+    cursor: pointer;
+  }
+  
+  /*DropDown*/
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #4d4f5c;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family:"normal";
+    font-size:13px;]
+  }
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Todo List Styling */
+  .todo-container {
+    margin-top: 110px;
+    margin-left: 30%;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .todo-container h2 {
+    color: #43425d;
+    font-size: 18px;
+    font-family: "Normal";
+    display: inline-block;
+  }
+  
+  .todo-body {
+    background-color: #f5f6fa;
+  }
+  .todo-wrapper {
+    margin-top: 75px;
+    background-color: white;
+    margin-bottom: 40px;
+  }
+  .todo-wrapper h3 {
+    color: #4d4f5c;
+    font: 18px "Normal";
+  }
+  .todolist-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .todolist-header button {
+    color: white;
+    font: 12px "Normal";
+    background-color: #3b86ff;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 35px;
+    cursor: pointer;
+  }
+  .todolist-header button:hover {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  /* Todo Table Styling */
+  .table {
+    margin: 0 20px;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .table th {
+    text-align: left;
+    font-family: "Bold";
+    color: #a3a6b4;
+    background: #f5f6fa;
+    padding: 15px 20px 15px;
+    font-size: 13px;
+  }
+  tbody td {
+    padding: 20px 0;
+    border-bottom: 1px solid #f1f1f3;
+    font-family: "Normal";
+    font-size: 13px;
+  }
+  .table button {
+    font-family: "Normal";
+    font-size: 11px;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ff6565;
+  }
+  .table button:hover {
+    background-color:#ff412b;
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  tr > th {
+    padding-left: 20px;
+  }
+  tr > td {
+    padding-left: 20px;
+  }
+  /* Modal Styling */
+  .modal-header{
+    display: flex;
+  }
+  .modal input {
+    background:transparent;
+    border-bottom: 2px solid #E9E9F0;
+  }
+  .modal-bg{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+  }
+  .bg-active {
+    visibility: visible;
+    opacity: 1;
+  }
+  .modal-header{
+    border-bottom: 1px solid #E9E9F0;
+    font:20px 'Normal';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+  .modal {
+    margin-left: 20%;
+    background-color: white;
+    width: auto;
+    padding: 0px 20px;
+    position: relative;
+  }
+  .modal input {
+    margin-bottom: 75px;
+    margin-top: 15px;
+    width: 100%;
+    font-size: 15px;
+  }
+  .modal button{ 
+    border-radius: 4px;
+    background: #3B86FF;
+    color: white;
+    border: none;
+    padding:10px 40px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+  }
+  .modal button:hover { 
+    transform: scale(0.9);
+    background-color:#160C28;
+    transform: 0.8s;
+  }
+  #menu {
+    visibility: hidden;
+    color: #4d4f5c;
+  }
+  /* TodoList Pagination Button Styling */
+  .page-indexes-wrapper {
+    padding:42px 20px 42px 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .page-indexes-wrapper button{
+    border:1px solid #CACED5;
+    background-color:white;
+    font:13px 'Normal';
+    color: #4D4F5C;
+    width: 33px;
+    height: 33px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .page-indexes-wrapper button:hover { 
+    transform: scale(0.95);
+  }
+  .page-indexes-wrapper button.hide {
+    display: none;
+  }
+  .activeBtn {
+    background-color: #3B86FF !important;
+    color: white !important;
+  }
+  /* Responsive  */
+  @media only screen and (max-width: 1420px)  {
+    .todo-container{
+      margin-left: 25%;
+    }
+  }
+  @media only screen and (max-width: 1366px) {
+    .side-img {
+      width: 50%;
+    }
+    .todo-container{
+      margin-left:28%;
+      padding-right: 2%;
+    }
+  }
+  
+  @media only screen and (max-width: 1120px){
+    .todo-container {
+      padding: 0 5%;
+      margin-left: 23%;
+    }
+    .side-bar {
+      width: 25%;
+    }
+    .nav-text h2 {
+      margin-left: 15%;
+    }
+    .nav-text img { 
+      margin-right: 15%;
+    }
+  }
+  .toggle { 
+    display: block;
+    width: 100%;
+  }
+  @media only screen and (max-width: 900px) {
+    .side-img {
+      width: 30%;
+      transition: 0.2s;
+    }
+    .side-bar {
+     width:0%;
+    }
+    #menu{
+      visibility: visible;
+      position: absolute;
+      left: 40px;
+      cursor: pointer;
+    }
+    .todo-container {
+      margin:auto;
+      padding-top:100px;
+    }
+    .todo-wrapper {
+      margin-top: 35px;
+    }
+    .modal{
+      margin-left: 0;
+    }
+    .modal button{
+      right: 40px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .side-img {
+      display: none;
+    }
+    .sign-form {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    input {
+      text-align: center;
+    }
+    .names {
+      display: flex;
+      flex-direction: column;
+    }
+    .name-form-group {
+      margin-right: 0;
+    }
+    .name-form-group2 > i {
+      margin-right: 0;
+    }
+    tbody tr td {
+      font-size:15px
+    }
+  }
+  @media only screen and (max-width: 440px){
+    .horizontal-sidebar{
+      padding-right: 5px;
+    }
+    .horizontal-sidebar .icons{
+      padding-right:5px;
+    }
+    .horizontal-sidebar .icons img{
+      padding-left: 15px;
+    }
+    #menu {
+      left:20px;
+    }
+  
+  }
+  @media only screen and (max-width: 380px) {
+    .form-heading > h2 {
+      font-size: 25px;
+    }
+    .form-heading > p {
+      font-size: 15px;
+    }
+    #signLogin,
+    #login,
+    #signup {
+      padding: 10px 30px;
+    }
+    .checkbox {
+      padding-left: 20%;
+    }
+    .names {
+      display: flex;
+      flex-direction: column;
+    }
+    input {
+      text-align: center;
+    }
+    .checkbox-group {
+      margin-top: 20px;
+    }
+    .modal button{
+      padding: 10px;
+    }
+    .page-indexes-wrapper{
+      padding: 42px 5px;
+    }
+    .page-indexes-wrapper button{
+      width: 22px;
+      height: 22px;
+      font-size: 15px;
+    }
+  }
+  
+  @media only screen and (max-width: 300px) {
+    .form-heading > h2 {
+      font-size: 20px;
+      letter-spacing: 5px;
+    }
+    .form-heading > p {
+      padding: 0 10px;
+    }
+    #signLogin,
+    #login,
+    #signup {
+      padding: 10px 20px;
+    }
+    .horizontal-sidebar .icons{
+      padding-right:0;
+    }
+    .horizontal-sidebar .icons img{
+      padding-left: 10px;
+    }
+    #menu {
+      left:10px;
+    }
+    .modal{
+      margin: 20px;
+    }
+  }
