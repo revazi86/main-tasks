@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/signin.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  </head>
+  <body class="todo-body">
+    <div class="container flex">
+
+      <header>
+        <div class="horizontal-sidebar">
+          <nav class="horizontal-nav">
+            <div class="icons">
+              <i class="fas fa-bars" style="padding-top:5px" id="menu"></i>
+              <img src="img/Support Iocn.svg" alt="" style="padding-top: 5px" />
+              <img src="img/Chat Icon.svg" alt="" style="padding-top: 5px" />
+              <img
+                src="img/Notification.svg"
+                alt=""
+                style="border-right: 1px solid #ebebf2; padding-right: 15px"
+              />
+              <div class="dropdown">
+                <h2 style="display: inline-block; padding-left: 20px">
+                John Doe
+                </h2>
+                <img src="img/small-down.svg" alt="" />
+                <div class="dropdown-content">
+                  <a href="#">Settings&Privacy</a>
+                  <a href="#">Help&Support</a>
+                  <a href="index.html">Log Out</a>
+                </div>
+              </div>
+              <a href="index.html">
+                <img src="img/Avatar.svg" alt="" />
+              </a>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Vertical navbar begins from here -->
+
+        <nav class="side-bar" id="side-bar">
+          <div class="nav-text flex">
+            <i class="fas fa-times" id="sidebar-close" style="color:#BCBCCB;cursor: pointer; position: absolute;
+            right: 15px; display:none;" ></i>
+            <a href="todo.html"><h2>Smartacademy</h2></a>
+            <img src="img/Group 245.svg" alt="menu" id="sidebar-icon" />
+          </div>
+          <ul class="side-bar-ul">
+            <li>
+              <a href="#">
+                <img src="img/Path 357.svg" alt="Home" />
+                Home
+              </a>
+            </li>
+            <li class="active">
+              <a href="#">
+                <img src="img/icon_dashboard.svg" alt="Dashboard" />
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/Union 9.svg" alt="Products" />
+                Products
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/Path 108.svg" alt="Settings" />
+                Settings
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      <!-- Todo List container -->
+      
+      <div class="todo-container">
+        <h2>Todo List</h2>
+        <div class="todo-wrapper">
+          <div class="todolist-header">
+            <h3>All Todo</h3>
+            <button class = "modal-btn">Add Todo</button>
+          </div>
+          <!-- Table For Api Data -->
+          <div class="table-container">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Task Name</th>
+                  <th>Is Completed</th>
+                  <th>Created By</th>
+                  <th id="create-date">Create Date</th>
+                  <th>Update Date</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="data"></tbody>
+            </table>
+          </div>
+          <!-- Pagination Buttons -->
+          <div class="page-indexes-wrapper" id="pageIndexesWrapper"> 
+            <button class="prev" style="color:#808495">&#8249;</button>
+            <div class="page-indexes">
+            </div>
+            <button class="next" style="color:#808495">&#8250;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Section -->
+    <div class="modal-bg">
+      <div class="modal" id="modal">
+        <div class="modal-header">
+          <h2>Add Todo</h2>
+          <i class="fas fa-times" id="close" style="color:#BCBCCB;cursor: pointer;"></i>
+        </div> 
+        <input type="text" placeholder="Title">
+        <button>Save</button>
+      </div>
+    </div>
+    <script src="main/todo.js"> </script>
+  </body>
+</html>
