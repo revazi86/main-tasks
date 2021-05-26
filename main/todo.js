@@ -131,35 +131,37 @@ modalBtn.addEventListener("click" , function() {
 })
 
 
-// When the user clicks on close button of the modal , close it
+
 const closeBtn = document.getElementById("close")
 closeBtn.addEventListener("click", function(){
   modalBg.classList.remove("bg-active");
 })
 
-// When the user clicks anywhere outside of the modal, close it
+
 window.onclick = function(event) {
   if (event.target == modalBg) {
     modalBg.classList.remove("bg-active")
   }
 }
 
-// Toggle menu
-const menuBtn = document.getElementById("menu")
-const closeButton = document.getElementById("sidebar-close")
-const menuImg = document.getElementById("sidebar-icon")
-var sideBar  = document.getElementById("side-bar")
-  function openMenu(){
-    sideBar.style.display="block";
-    sideBar.style.width = "100%";
-    menuImg.style.display="none";
-    closeButton.style.display = "block";
-  }
-  function closeMenu(){
-    sideBar.style.width = "0%";
-  }
-
-menuBtn.addEventListener('click', openMenu)
-closeButton.addEventListener('click', closeMenu)
 
 
+let ToggleNavStatus = false;
+
+let ToggleNav = function() {
+  let getSidebar = document.querySelector(".side-bar");
+  let getSidebarUl = document.querySelector(".side-bar ul");
+  let getSidebarLinks = document.querySelectorAll(".side-bar a");
+
+ if(ToggleNavStatus === false) {
+  getSidebarUl.style.visibility = "visible";
+  getSidebar.style.width = "272px";
+  
+
+  let arrayLength = getSidebarLinks.length;
+  for (var i=0; i < arrayLength; i++);
+
+
+  ToggleNavStatus = false;
+ }
+}

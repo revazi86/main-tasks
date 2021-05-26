@@ -242,10 +242,10 @@
     transition:all 0.5s;
   }
   
-  .side-bar-ul li {
+  .side-bar ul li {
     padding-left: 20px;
   }
-  .side-bar-ul li a {
+  .side-bar ul li a {
     display: flex;
     color: white;
     font-family: "Normal";
